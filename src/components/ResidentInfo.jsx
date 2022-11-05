@@ -15,19 +15,11 @@ const ResidentInfo = ({ ricky }) => {
         <div className='list'>
             <ul>
                 <li>
-                    <b>Name:</b> {character.name}
-                </li>
-                <li>
-                    <img src={character.image} alt="" />
-                </li>
-                <li>
-                    <b>Status:</b> {character.status}
-                </li>
-                <li>
-                    <b>Origin Name:</b>  {character.origin?.name}
-                </li>
-                <li>
-                    <b>Episodes:</b> {character.episode?.length}
+                    <p><b>Name:</b> {character.name}</p>
+                    <p><img src={character.image} alt="" /></p>
+                    <p><b>Status:</b> {character.status}</p>
+                    <p><b>Origin Name:</b>  {character.origin?.name}</p>
+                    <p><b>Episodes:</b> {character.episode?.length}</p>
                 </li>
             </ul>
         </div>

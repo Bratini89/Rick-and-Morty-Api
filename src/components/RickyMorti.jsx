@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import Footer from './Footer';
 import ResidentInfo from './ResidentInfo';
 
 const RickyMorti = () => {
@@ -38,7 +37,7 @@ const RickyMorti = () => {
                 </div>
             </div>
             <div className='inputSearch'>
-                <input type="text" value={typeId} onChange={e => setTypeId(e.target.value)} />
+                <input type="text" placeholder='Type a # 1 to 126' value={typeId} onChange={e => setTypeId(e.target.value)} />
                 <button onClick={searchType}><i class="fa-solid fa-magnifying-glass"></i>{" "}Search</button>
                 <ul>
                     {ricky.residents?.map(ricky => (
@@ -46,7 +45,6 @@ const RickyMorti = () => {
                     ))}
                 </ul>
             </div>
-            <Footer />
         </div>
     );
 };

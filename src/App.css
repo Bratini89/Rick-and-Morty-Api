@@ -27,6 +27,7 @@ body {
   place-items: center;
 }
 
+
 ul {
 
   padding: 0;
@@ -44,14 +45,27 @@ ul li {
 img {
   border-radius: 10px;
   box-shadow: 1px 1px 10px 5px #b7b1b1;
-  width: 200px
+  width: 200px;
+
+  transition: 1s linear;
+}
+
+img:hover {
+  box-shadow: 1px 1px 15px 1px rgb(51, 21, 184);
 }
 
 input {
   border-radius: 5px;
   margin: 0.2rem;
-  background: aquamarine;
+  background: rgb(1, 20, 14);
+  color: whitesmoke;
+  box-shadow: 1px 1px 15px 1px lightcyan;
+  transition: 1s linear;
 
+}
+
+input:hover {
+  box-shadow: 1px 1px 15px 1px #c11010;
 }
 
 button {
@@ -61,7 +75,13 @@ button {
   font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
+  transition: 2s linear;
 }
+
+button:hover {
+  box-shadow: 1px 1px 15px 1px rgb(176, 175, 187);
+}
+
 
 .list {
 
@@ -72,7 +92,7 @@ button {
   transition-property: all;
   box-shadow: 0px 0px 7px 1px #d1c7c7;
   justify-content: space-between;
-  margin: 0.2rem;
+  margin: 1rem;
   place-items: center;
   border-radius: 10px;
 
@@ -110,4 +130,19 @@ button {
   font-size: revert;
   font-family: cursive;
   color: beige;
+}
+
+footer {
+  transition: 1s linear;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  flex-direction: center;
+  text-align: center;
+}
+
+footer:hover {
+  color: rgb(117, 121, 136);
+  text-shadow: #b7b1b1;
 }
