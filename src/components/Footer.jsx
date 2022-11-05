@@ -3,9 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer>
-            <p>
+            <small>
                 Code by || Carlos Bratini {" "}<i class="fa-solid fa-code"></i>
-            </p>
+            </small>
         </footer>
     );
 };
