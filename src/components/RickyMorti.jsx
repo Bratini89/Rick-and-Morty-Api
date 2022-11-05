@@ -42,8 +42,7 @@ const RickyMorti = () => {
                 <button onClick={searchType}><i class="fa-solid fa-magnifying-glass"></i>{" "}Search</button>
                 <ul>
                     {ricky.residents?.map(ricky => (
-                        <Residentinfo
-                            ricky={ricky} key={ricky} />
+                        <Residentinfo ricky={ricky} key={ricky} />
                     ))}
                 </ul>
             </div>

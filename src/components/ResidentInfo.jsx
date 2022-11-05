@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-const Residentinfo = ({ ricky }) => {
+const ResidentInfo = ({ ricky }) => {
     const [character, setCharacter] = useState({})
 
     useEffect(() => {
@@ -36,4 +36,4 @@ const Residentinfo = ({ ricky }) => {
     );
 };
 
-export default Residentinfo;
+export default ResidentInfo;
